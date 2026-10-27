@@ -1,0 +1,6 @@
+{
+    "cold_start_ms": 0.010200001270277426,
+    "health_latency_ms": 6.373199999870849,
+    "embed_avg_latency_ms": 4.801280000356201,
+    "hardware": "CPU (Simulated if InsightFace missing)"
+}

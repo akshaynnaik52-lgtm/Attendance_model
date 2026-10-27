@@ -1,0 +1,36 @@
+{
+    "status": "DEVELOPMENT_ONLY",
+    "warning": "PRODUCTION RECOGNITION THRESHOLD NOT CALIBRATED \u2014 REAL IDENTITY-AWARE DATA REQUIRED.",
+    "model_version": "w600k_r50",
+    "embedding_dimension": 512,
+    "preprocessing_version": "synthetic_v1",
+    "threshold_version": "v0_mock",
+    "metric": "cosine",
+    "gallery_strategy": "maximum_similarity",
+    "target_fars_evaluated": [
+        "1%",
+        "0.1%",
+        "0.01%"
+    ],
+    "calibration_results": {
+        "FAR_0.01": {
+            "tar": 0.3115,
+            "far": 0.01,
+            "threshold": 0.10246329942205407,
+            "note": "Closest match to target FAR=0.01"
+        },
+        "FAR_0.001": {
+            "tar": 0.113,
+            "far": 0.001,
+            "threshold": 0.13364758979987812,
+            "note": "Closest match to target FAR=0.001"
+        },
+        "FAR_0.0001": {
+            "tar": 0.0365,
+            "far": 0.0001,
+            "threshold": 0.158149532239597,
+            "note": "Closest match to target FAR=0.0001"
+        }
+    },
+    "selected_threshold_development_only": 0.13364758979987812
+}

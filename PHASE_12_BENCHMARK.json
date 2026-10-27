@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-08T01:22:21.865981",
+  "system": {
+    "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "win32"
+  },
+  "benchmarks": {
+    "cosine_similarity_512d": {
+      "avg_ms": 0.0038,
+      "p50_ms": 0.0037,
+      "p95_ms": 0.0038,
+      "p99_ms": 0.0057,
+      "min_ms": 0.0036,
+      "max_ms": 0.0146,
+      "iterations": 1000
+    },
+    "gallery_match_1500_vectors": {
+      "avg_ms": 5.8646,
+      "p50_ms": 5.8631,
+      "p95_ms": 6.0107,
+      "p99_ms": 6.0517,
+      "gallery_students": 300,
+      "gallery_embeddings": 1500,
+      "top_k": 5,
+      "iterations": 100
+    },
+    "gallery_match_5000_vectors": {
+      "avg_ms": 19.7389,
+      "p50_ms": 19.7525,
+      "p95_ms": 20.0598,
+      "p99_ms": 20.2494,
+      "gallery_students": 1000,
+      "gallery_embeddings": 5000,
+      "top_k": 5,
+      "iterations": 50
+    },
+    "face_quality_assessment": {
+      "avg_ms": 0.191,
+      "p50_ms": 0.1613,
+      "p99_ms": 0.4156,
+      "iterations": 100
+    },
+    "argon2id_hash": {
+      "avg_ms": 51.5718,
+      "min_ms": 51.3262,
+      "max_ms": 52.1965,
+      "iterations": 5,
+      "note": "Intentionally CPU/memory-bound for credential protection"
+    },
+    "argon2id_verify": {
+      "avg_ms": 50.9459,
+      "min_ms": 50.2255,
+      "max_ms": 51.4995,
+      "iterations": 5,
+      "note": "Matches hash cost"
+    },
+    "jwt_creation": {
+      "avg_ms": 0.0236,
+      "p50_ms": 0.018,
+      "p99_ms": 0.0733,
+      "iterations": 100
+    },
+    "embedding_validation": {
+      "dimension": 512,
+      "l2_norm_mean": 1.0,
+      "l2_norm_std": 0.0,
+      "self_similarity_mean": 1.0,
+      "random_cross_similarity_mean": -0.002593,
+      "random_cross_similarity_std": 0.045354
+    }
+  },
+  "recognition_metrics": {
+    "status": "PENDING \u2014 REAL IDENTITY-AWARE DATA REQUIRED",
+    "FAR": null,
+    "FRR": null,
+    "TAR_at_FAR_0_01": null,
+    "TAR_at_FAR_0_001": null,
+    "ROC_AUC": null,
+    "Rank_1_accuracy": null,
+    "Rank_5_accuracy": null,
+    "production_threshold": null,
+    "note": "Recognition accuracy metrics cannot be computed without real, consented, identity-aware, multi-session enrollment and probe data. The evaluation framework (Phase 5) is ready to generate these metrics once such data is collected."
+  }
+}

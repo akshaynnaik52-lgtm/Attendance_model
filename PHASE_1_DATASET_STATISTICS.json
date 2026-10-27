@@ -1,0 +1,30 @@
+{
+    "total_files": 20003,
+    "extensions": {
+        ".jpg": 20003
+    },
+    "directories": {
+        "d:/Major_Project/archive/face2comics_v1.0.0_by_Sxela/face2comics_v1.0.0_by_Sxela/face": 10000,
+        "d:/Major_Project/archive/face2comics_v1.0.0_by_Sxela/face2comics_v1.0.0_by_Sxela/comics": 10000,
+        "d:/Major_Project/archive/samples": 3
+    },
+    "image_stats": {
+        "readable": 500,
+        "corrupt": 0,
+        "resolutions": {
+            "512x512": 500
+        },
+        "channels": {
+            "3": 500
+        }
+    },
+    "identity_info": {
+        "has_labels": false,
+        "has_metadata_files": false,
+        "filename_pattern_indicates_identity": false
+    },
+    "duplicates": {
+        "exact_duplicates": 0,
+        "duplicate_groups": 0
+    }
+}

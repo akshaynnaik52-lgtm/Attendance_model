@@ -1,0 +1,13 @@
+{
+    "hardware": "CPU (Mocked/Simulated)",
+    "total_images_processed": 100,
+    "successful_detections": 100,
+    "images_no_detection": 0,
+    "total_faces_detected": 100,
+    "latency_ms": {
+        "average": 0.5695260000538838,
+        "median": 0.2881500004150439,
+        "p95": 0.46658000019306173
+    },
+    "throughput_fps": 1755.8460893890506
+}

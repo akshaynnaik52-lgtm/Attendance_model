@@ -1,0 +1,21 @@
+# Phase 5 Checklist
+
+- [x] Implemented complete evaluation framework (generate trials, evaluate, analyze).
+- [x] Validated with synthetic/mock embeddings.
+- [x] Evaluated Verification (Genuine vs. Impostor trials).
+- [x] Evaluated Identification (Rank-1, Rank-5).
+- [x] Evaluated Open-Set (Unknown rejection).
+- [x] Avoided misleading metrics from extreme class imbalance (sampled impostor trials proportionally).
+- [x] Calculated Genuine and Impostor statistics (mean, median, std, etc.).
+- [x] Calculated ROC-AUC and notable operating points.
+- [x] Performed Enrollment-Size Analysis (1 vs. 3 vs. 5 enrollments).
+- [x] Checked for Data Leakage (duplicates/overlaps between gallery and query).
+- [x] Checked cross-session and difficult-condition availability (logged as unavailable).
+- [x] Documented Failure Analysis (synthetic bounds).
+- [x] Verified Latency (Matching).
+- [x] Created comprehensive test suite (`test_evaluation.py`).
+- [x] Explicitly noted statistical limitations (synthetic data).
+- [x] **DID NOT** select a final threshold.
+- [x] Created `docs/PHASE_5_RECOGNITION_EVALUATION.md`.
+- [x] Created `docs/PHASE_5_METRICS.json`.
+- [x] **DO NOT** start Phase 6 automatically.

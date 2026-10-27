@@ -1,0 +1,12 @@
+{
+    "hardware": "CPU (Mocked/Simulated if insightface missing)",
+    "model_name": "arcface_r50",
+    "embedding_dimension": 512,
+    "total_images_processed": 500,
+    "latency_ms": {
+        "average": 0.10582259992952459,
+        "median": 0.08009999874047935,
+        "p95": 0.152099999559141
+    },
+    "throughput_fps": 9449.777275043109
+}

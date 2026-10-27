@@ -1,0 +1,196 @@
+{
+  "phase": 5,
+  "status": "FRAMEWORK_VALIDATED_WITH_MOCK_SYNTHETIC_DATA",
+  "critical_notice": "The identity-aware dataset has NOT been collected. All metrics below are derived from SYNTHETIC mock embeddings and must NOT be treated as real recognition accuracy. REAL RECOGNITION METRICS PENDING IDENTITY-AWARE DATA.",
+  "dataset": {
+    "source": "MOCK_SYNTHETIC",
+    "enrolled_identities": 30,
+    "unknown_identities": 10,
+    "enrollment_images": 150,
+    "known_query_images": 240,
+    "unknown_query_images": 80,
+    "enrollment_per_identity": 5
+  },
+  "leakage_check": {
+    "passed": true,
+    "details": {
+      "exact_duplicates_gallery_known_query": 0,
+      "identity_overlap_unknown_vs_enrolled": 0
+    }
+  },
+  "verification": {
+    "status": "COMPUTED",
+    "genuine_count": 1200,
+    "impostor_count": 2400,
+    "statistics": {
+      "genuine": {
+        "count": 1200,
+        "mean": 0.08327482771128417,
+        "median": 0.08511161059141159,
+        "std": 0.04043436102557186,
+        "min": 0.006259377114474773,
+        "max": 0.1828548163175583,
+        "p5": 0.0134652154520154,
+        "p25": 0.05714642256498337,
+        "p75": 0.10954950004816055,
+        "p95": 0.17140550911426544
+      },
+      "impostor": {
+        "count": 2400,
+        "mean": 0.001077710940007819,
+        "median": 0.0022254737559705973,
+        "std": 0.04389466686998729,
+        "min": -0.14748772978782654,
+        "max": 0.11586705595254898,
+        "p5": -0.07312339544296265,
+        "p25": -0.027194878086447716,
+        "p75": 0.02858470194041729,
+        "p95": 0.07541681826114655
+      }
+    },
+    "roc_auc": 0.9185555555555556,
+    "operating_points": {
+      "FAR_0.01": {
+        "tar": 0.3333333333333333,
+        "far": 0.009583333333333333,
+        "threshold": 0.10017903257825811,
+        "note": "Closest match to target FAR=0.01"
+      },
+      "FAR_0.001": {
+        "tar": 0.23333333333333334,
+        "far": 0.0008333333333333334,
+        "threshold": 0.11281663945179904,
+        "note": "Closest match to target FAR=0.001"
+      },
+      "FAR_0.0001": {
+        "tar": null,
+        "far": null,
+        "threshold": null,
+        "note": "Insufficient impostors (2400) to reliably estimate FAR=0.0001 (need >= 10000)"
+      }
+    },
+    "roc_curve_sample_count": 500
+  },
+  "identification": {
+    "status": "COMPUTED",
+    "total_queries": 240,
+    "rank_1_accuracy": 0.6708333333333333,
+    "rank_1_correct": 161,
+    "rank_5_accuracy": 0.9458333333333333,
+    "rank_5_correct": 227,
+    "correct_identity_similarity": {
+      "count": 240,
+      "mean": 0.130628077693594,
+      "median": 0.12885632365942,
+      "std": 0.030918231285658376,
+      "min": 0.02268684096634388,
+      "max": 0.22271279990673065,
+      "p5": 0.08441547490656376,
+      "p25": 0.10829456895589828,
+      "p75": 0.14963417500257492,
+      "p95": 0.18100854903459546
+    },
+    "incorrect_top_similarity": {
+      "count": 79,
+      "mean": 0.12784037107153784,
+      "median": 0.12434887886047363,
+      "std": 0.02270522120732468,
+      "min": 0.08099181950092316,
+      "max": 0.20578502118587494,
+      "p5": 0.09579721093177795,
+      "p25": 0.11100972071290016,
+      "p75": 0.14082762598991394,
+      "p95": 0.16858905106782912
+    }
+  },
+  "open_set": {
+    "status": "COMPUTED",
+    "count": 80,
+    "distribution": {
+      "count": 80,
+      "mean": 0.11865439033135772,
+      "median": 0.11436846107244492,
+      "std": 0.021672993090708602,
+      "min": 0.08278531581163406,
+      "max": 0.1917860358953476,
+      "p5": 0.09100760295987129,
+      "p25": 0.10251492448151112,
+      "p75": 0.13372782617807388,
+      "p95": 0.15725416094064712
+    }
+  },
+  "enrollment_size_experiment": {
+    "enroll_1": {
+      "enrollment_size": 1,
+      "rank_1_accuracy": 0.4041666666666667,
+      "rank_1_queries": 240,
+      "genuine_sim_mean": 0.09489817730018071,
+      "genuine_sim_std": 0.033863558232322906,
+      "unknown_max_sim_mean": 0.09316478879190981,
+      "unknown_max_sim_std": 0.024888260337519116
+    },
+    "enroll_3": {
+      "enrollment_size": 3,
+      "rank_1_accuracy": 0.6083333333333333,
+      "rank_1_queries": 240,
+      "genuine_sim_mean": 0.12105113553559833,
+      "genuine_sim_std": 0.029576765092269766,
+      "unknown_max_sim_mean": 0.11349671166390181,
+      "unknown_max_sim_std": 0.02213594545872553
+    },
+    "enroll_5": {
+      "enrollment_size": 5,
+      "rank_1_accuracy": 0.6708333333333333,
+      "rank_1_queries": 240,
+      "genuine_sim_mean": 0.13377077926754427,
+      "genuine_sim_std": 0.028415480029808607,
+      "unknown_max_sim_mean": 0.11865439033135772,
+      "unknown_max_sim_std": 0.021672993090708602
+    }
+  },
+  "latency": {
+    "matching_latency_ms": {
+      "mean": 0.5837125000107335,
+      "median": 0.5795500001113396,
+      "p95": 0.6172349993903481
+    },
+    "gallery_size": 30,
+    "enrollments_per_identity": 5,
+    "hardware": "CPU",
+    "note": "Matching latency only (excludes detection, alignment, and embedding)."
+  },
+  "failure_analysis": {
+    "note": "Synthetic embeddings; failure patterns are framework-validation only.",
+    "genuine_lowest": {
+      "similarity": 0.006259377114474773,
+      "trial_id": "trial_002160",
+      "likely_cause": "Synthetic noise variation (not a real failure)"
+    },
+    "impostor_highest": {
+      "similarity": 0.11586705595254898,
+      "trial_id": "trial_002093",
+      "likely_cause": "Synthetic noise overlap (not a real failure)"
+    },
+    "unknown_highest": {
+      "similarity": 0.1917860358953476,
+      "matched_to": "student_024",
+      "likely_cause": "Synthetic random proximity (not a real failure)"
+    }
+  },
+  "cross_session": {
+    "available": false,
+    "note": "Cross-session evaluation requires real multi-session data."
+  },
+  "condition_analysis": {
+    "available": false,
+    "note": "Condition-specific evaluation requires real data with metadata."
+  },
+  "statistical_limitations": [
+    "All results are from synthetic embeddings \u2014 they validate framework logic only.",
+    "Genuine/impostor distributions are artificially separated by construction.",
+    "ROC-AUC and operating points do NOT reflect real model performance.",
+    "Enrollment-size experiment uses synthetic data and may not generalize.",
+    "No real cross-session or condition-specific evaluation is possible yet."
+  ],
+  "threshold_note": "NO production threshold is selected in Phase 5. Threshold calibration will occur in Phase 6 using real data."
+}
